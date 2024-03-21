@@ -6,7 +6,11 @@ RUN apt-get update && apt-get install -y \
   git \
   inetutils-ping \
   openssl \
+  procps \
+  rsync \
+  telnet \
   traceroute \
+  vim \
   wget \
   zsh \
   && apt-get clean
