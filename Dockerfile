@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
   openssl \
   procps \
   rsync \
+  sqlite3 \
   telnet \
   traceroute \
   vim \
