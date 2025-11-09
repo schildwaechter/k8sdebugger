@@ -9,20 +9,22 @@ RUN date +"%d %b %Y @ %H:%M:%S %Z" > /etc/build_time
 # We explicitly want latest packes versions at time of compile
 # hadolint ignore=DL3008
 RUN apt-get update && apt-get install -y --no-install-recommends \
-  curl \
-  dnsutils \
-  git \
-  inetutils-ping \
-  iproute2 \
-  openssl \
-  procps \
-  rsync \
-  sqlite3 \
-  telnet \
-  traceroute \
-  vim \
-  wget \
-  zsh \
-  && apt-get clean && rm -rf /var/lib/apt/lists
+    curl \
+    dnsutils \
+    git \
+    inetutils-ping \
+    iproute2 \
+    jq \
+    openssl \
+    procps \
+    rsync \
+    sqlite3 \
+    telnet \
+    traceroute \
+    vim \
+    wget \
+    yq \
+    zsh \
+    && apt-get clean && rm -rf /var/lib/apt/lists
 
 CMD ["zsh"]
