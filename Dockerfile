@@ -9,6 +9,7 @@ RUN date +"%d %b %Y @ %H:%M:%S %Z" > /etc/build_time
 # We explicitly want latest packes versions at time of compile
 # hadolint ignore=DL3008
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
     curl \
     dnsutils \
     git \
